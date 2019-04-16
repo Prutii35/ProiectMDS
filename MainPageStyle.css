@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  a{
+    text-decoration:none;
+  }
+  
+  .Container{
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .Container-Titlu{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .border{
+    width: 160px;
+    height: 2px;
+    background: MediumPurple;
+    margin: 40px auto;
+  }
+  .Container-Info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Container-Element{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .Container-Img{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border: 3px solid MediumPurple;
+    color: MediumPurple;
+    transform: rotate(45deg);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    transition: 0.3s linear;
+    margin-left : 50px;
+    margin-right: 50px;
+  }
+  .Container-Img i{
+    color:MediumPurple;
+    line-height: 90px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .Container-Element:hover .Container-Img{
+    background: Mediumpurple;
+    color: #ddd;
+  }
+  .Container-Element:hover .Container-Img i{
+    color: #ddd;
+  }
+  .Container-ElemTitlu{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .Container-Element{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .Container-Element{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .Container-Element{
+      max-width: 100%;
+    }
+  }
+  
