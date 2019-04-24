@@ -59,10 +59,44 @@
   }
 
   .gif{
-    float: left;
     margin-bottom: 50px;
     margin-right: 10px;
     border-radius: 8px;
+    height: 300px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gif2{
+    margin-bottom: 50px;
+    margin-right: 10px;
+    height: 250px;
+    width: 250px;
+    float: left;
+    border-radius: 200px;
+  }
+
+
+  @media screen and (max-width:550px){
+    .Container{
+      width: 80%;
+    }
+    .gif{
+      border-radius: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
+      height: 200px;
+      float: none;
+    }
+
+    .gif2{
+      height: 180px;
+      width: 180px;
+    }
   }
 
  
